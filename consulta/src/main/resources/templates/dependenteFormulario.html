@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Cadastro Dependentes</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="margin-top: 7em;">
+            <div class="col"></div>
+            <div class="col-">
+                <h1>Insira os dados no formulário</h1>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row" style="margin-top: 1em;">
+            <div class="col"></div>
+            <div class="col-">
+                <form action="/seguradoradep/adddependente" method="post">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome"><br>
+                    <label for="idade">Idade:</label>
+                    <input type="text" id="idade" name="idade"><br>
+                    <p style="text-align: center;"><input type="submit" value="Enviar" /></p>
+                </form>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-">
+                <button style="margin-right: 18px;"><a href="/seguradoradep/">Reset</a></button>
+            </div>
+            <div class="col-">
+                <button style="margin-right: 18px;"><a href="/seguradoradep/listadep">LISTA DE DEPENDENTES</a></button>
+            </div>
+            <div class="col-">
+                <button style="margin-right: 18px;"><a href="/seguradoradep/filtroDepForm">ENCONTRE UM DEPENDENTE PELA IDADE</a></button>
+            </div>
+            <div class="col-">
+                <button style="margin-right: 18px;"><a href="/seguradora/">CADASTRE UM CLIENTE</a></button>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+
+</html>
